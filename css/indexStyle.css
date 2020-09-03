@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "OpenSans", Arial, sans-serif;
+}
+
+/*----------------------------------------Top-Heading------------------------------------------------*/
+/*-----------------------------------Top-Heading-->Banner--------------------------------------------*/
+.heading-banner-nav {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  border-bottom: 3px solid rgba(0, 79, 109, 0.9);
+  z-index: 700;
+  background-color: white;
+}
+
+.heading-banner-nav img {
+  display: flex;
+  margin: auto;
+  max-width: 200px;
+}
+
+.modal-content {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+}
+
+.modal-content .btn {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  width: 150px;
+  height: 50px;
+}
+
+/*-------------------------------------------Booking Form--------------------------------------*/
+.bookFormBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0);
+  width: 280px;
+  position: relative;
+  top: 185px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 4x;
+}
+
+/*------------------------------------------Carousel **Sliding Banner**------------------------------------------------*/
+.carousel {
+  position: absolute;
+  top: 475px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  position: relative;
+  height: 300px;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  background-color: rgba(0, 89, 131, 0.6);
+  height: 110px;
+  padding: 10px;
+  width: 300px;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+  display: block;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+.carousel-caption h3 {
+  font-size: 20px;
+}
+
+.carousel-caption p {
+  padding: 10px;
+  font-size: 14px;
+}
+/*-------------------------------------------------------------Footer-gloabl-----------------------------------------------------------------------*/
+footer {
+  position: relative;
+  padding: 20px 0;
+  background-color: #f7f7f7;
+  text-align: center;
+  top: 400px;
+  width: 100%;
+  height: 90px;
+}
+
+.footer-component-1 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-component-1 a {
+  color: #404040;
+  font-size: 11px;
+  padding: 0 15px;
+  text-decoration: none;
+  border-right: 1px solid #404040;
+}
+
+.footer-component-1 li:nth-child(4) a {
+  border: none;
+}
+
+.footer-component-1 li {
+  display: inline-block;
+}
+
+.footer-component-2 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 10px 0;
+}
+.footer-component-2 span {
+  font-size: 11px;
+  color: #404040;
+}
+
+.footer-component-2 img {
+  width: 50px;
+  padding-left: 5px;
+}
+
+/*---------------------------------------------------Responsive--------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+  /*------------------------------------------------Heading-banner---------------------------------------------------------------------------------*/
+  .heading-banner-nav img {
+    max-width: 400px;
+  }
+
+  /*--------------------------------------------------------------Caraousel--------------------------------------------------------------------------*/
+  .carousel {
+    top: 75px;
+  }
+
+  .carousel-item {
+    height: 435px;
+  }
+
+  .carousel-caption {
+    left: 325px;
+    height: 150px;
+    width: 400px;
+    text-align: left;
+  }
+
+  .carousel-caption h3 {
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .carousel-caption p {
+    padding: 15px 0 0 0;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  #carousel-book-hotels {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  /*--------------------------------------------------------------Hotel Deals--------------------------------------------------------------------------*/
+  .hotel-deals {
+    top: 500px;
+  }
+
+  .hotel-deals-head {
+    font-size: 30px;
+  }
+
+  .hotel-deals-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .deals-card-point {
+    width: 150px;
+    font-size: 20px;
+  }
+
+  .hotel-deals-card {
+    width: 300px;
+  }
+
+  .deals-card-img {
+    height: 225px;
+  }
+
+  .info-name-hotel,
+  .info-rate-price {
+    font-size: 17px;
+  }
+
+  .info-name-city {
+    font-size: 15px;
+  }
+
+  .info-rate-unit {
+    font-size: 12px;
+  }
+
+  /*--------------------------------------------------------------How it works-----------------------------------------------------------------------*/
+  .how-works {
+    top: 470px;
+  }
+
+  .how-works-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .works-info-head {
+    font-size: 25px;
+    padding: 20px 0 20px 0;
+  }
+
+  .how-works-info {
+    width: 300px;
+    padding-bottom: 20px;
+  }
+
+  .how-works p {
+    font-size: 20px;
+  }
+
+  .how-works-info .fa-bed,
+  .how-works-info .fa-credit-card,
+  .how-works-info .fa-tags {
+    font-size: 5em;
+  }
+
+  /*--------------------------------------------------------------footer--------------------------------------------------------------------------*/
+
+  footer {
+    top: 450px;
+  }
+
+  .footer-component-1 a {
+    font-size: 16px;
+  }
+
+  .footer-component-2 span {
+    font-size: 16px;
+  }
+
+  .footer-component-2 img {
+    width: 60px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .heading-banner-nav img {
+    max-width: 350px;
+  }
+
+  .bookFormBox {
+    width: 300px;
+    height: 200px;
+  }
+
+  .amtrak-logo img {
+    width: 100px;
+  }
+
+  .login-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .login-button .btn {
+    width: 125px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .carousel {
+    top: 80px;
+  }
+
+  .carousel-item {
+    height: 525px;
+  }
+
+  .carousel-caption {
+    height: 150px;
+    width: 650px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .carousel-caption h3 {
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .carousel-caption p {
+    padding-top: 20px;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  #carousel-book-hotels {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  footer {
+    top: 325px;
+    height: 120px;
+  }
+
+  .footer-component-1 a {
+    font-size: 18px;
+  }
+
+  .footer-component-2 span {
+    font-size: 18px;
+  }
+
+  .footer-component-2 img {
+    width: 75px;
+  }
+}
